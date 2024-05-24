@@ -1,0 +1,35 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": "nlw ",
+    "details": null,
+    "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/8d43a705-9ea7-4f56-bf0e-43667277f62d/attendees
+Content-Type: application/json
+
+{
+    "name": "lucas reis",
+    "email": "lucaspe@losdevs.com"
+}
+
+
+###
+
+GET http://localhost:3333/event/8d43a705-9ea7-4f56-bf0e-43667277f62d
+
+###
+
+GET http://localhost:3333/attendee/2/badge
+
+###
+
+GET http://localhost:3333/attendee/1/check-in
+
+###
+
+GET http://localhost:3333/event/8d43a705-9ea7-4f56-bf0e-43667277f62d/attendees?query=lucas
